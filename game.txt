@@ -1,0 +1,76 @@
+Let's make a game!
+	-TPP Clicker
+	-by MineRobber9000
+	-version 1
+
+Settings :
+	-prices increase by 130%
+	-selling gives back 75%
+    -resources are visible by default
+    -clickables are visible by default
+    -buildings are visible by default
+    -upgrades are hidden by default
+	-achievements are hidden by default
+    -text color : #000
+    -fonts : Roboto
+    -boxes : main (title, resources, clickables, save); store (upgrades, buildings);
+
+Resources :
+	*PokeYen
+	-starts at 0
+	-displayed as You have %a %r.
+	-named PokeYen
+
+Clickables :
+	*PokeYen
+	-gives 1 PokeYen
+	-named PokeYen get!
+
+Buildings :
+	*Abby
+	-costs 5 PokeYen
+	-gives .1 PokeYen
+	-named Abby|Abbys
+	-"Yields <b>0.1</b> base PokeYen per PokeYen trip.<br><i>You tell Abby to go find you some PokeYen.</i>"
+	-locks Abby
+	*Rattata
+	-costs 10 PokeYen
+	-gives .5 PokeYen 80% of the time
+	-"Yields <b>0.5</b> base PokeYen per PokeYen trip, but only 80% of the time.<br><i>Jay Leno does some socializing, and gets you some volunteers to find some PokeYen.</i>"
+	*JayLeno
+	-costs 20 PokeYen
+	-gives 1 PokeYen
+	-named Jay Leno
+	-"Yields <b>1</b> base PokeYen per PokeYen trip.<br><i>Jay Leno decides to help find PokeYen.<i>"
+	-locks JayLeno
+	*FalseProphet
+	-costs 30 PokeYen
+	-gives 10 PokeYen
+	-named False Prophet
+	-"Yields <b>10</b> base PokeYen per PokeYen trip.<br><i>Eevee feels bad about being a false prophet, and slides some PokeYen your way each trip.</i>"
+    *BirdJesus
+    -costs 50 PokeYen
+    -gives 25 PokeYen for 1 BirdJesusFood
+    -named Bird Jesus
+    -"Yields <b>25</b> PokeYen per PokeYen trip as long as it is well fed.<br><i>After eating, Bird Jesus quickly nabs some PokeYen from a street vendor."
+    *BirdJesusFood
+    -costs 3 PokeYen
+    -named Food for Bird Jesus
+    -"<i>Food to sacrifice to Bird Jesus.</i>"
+    -starts at 10
+    *HelixFossil
+    -costs 100 PokeYen
+    -gives 1000 PokeYen 20% of the time
+    -named Lord Helix
+    -"Yields <b>1000</b> PokeYen per PokeYen trip 20% of the time.<br><i>Lord Helix himself decides to grant you some PokeYen, but it doesn't always work like you hope it will.</i>"
+
+Upgrades :
+	*Potion
+	-named Potion Grabber
+	-"Your pokemon steal Potions from traveling PokeMart salesmen. This allows them to go on longer trips, increasing their output <b>tenfold</b>."
+	-unlocks at 1 Abby
+	-multiplies efficiency of Abby by 1000%
+	-multiplies efficiency of JayLeno by 1000%
+	-multiplies efficiency of FalseProphet by 1000%
+	-multiplies efficiency of BirdJesus by 1000%
+	-multiplies efficiency of HelixFossil by 1000%
